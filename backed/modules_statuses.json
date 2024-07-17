@@ -1,0 +1,11 @@
+{
+    "User": true,
+    "Company": true,
+    "Lease": true,
+    "Payment": true,
+    "Maintenance": true,
+    "Homes": true,
+    "StoresAndShops": true,
+    "Airbnbs": true,
+    "Communication": true
+}

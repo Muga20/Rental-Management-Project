@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build . --file Dockerfile --tag muga1290/habitat-hub:v1.0
+
+      - name: Push Docker image to Docker Hub
+        if: success()  # Only push if the build succeeded
+        run: |
+          echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+          docker push muga1290/habitat-hub:v1.0

@@ -1,0 +1,11 @@
+{
+    "name": "Lease",
+    "alias": "lease",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Lease\\Providers\\LeaseServiceProvider"
+    ],
+    "files": []
+}

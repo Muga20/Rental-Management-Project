@@ -1,0 +1,11 @@
+{
+    "name": "Homes",
+    "alias": "homes",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Homes\\Providers\\HomesServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,24 @@
+   // if ($roles->contains('admin') || $roles->contains('sudo') || $roles->contains('landlord')) {
+        //     return response()->json([
+        //         'message' => 'Success',
+        //         'token' => $accessToken,
+        //         'refresh_token' => $refreshToken,
+        //     ]);
+        // }
+
+        // if ($roles->contains('tenant') || $roles->contains('user') || $roles->contains('agent')) {
+        //     $tenantId = $user->id;
+        //     $unit = Units::where('tenant_id', $tenantId)->first();
+
+        //     if ($unit && $unit->home) {
+        //         return response()->json([
+        //             'message' => 'Success',
+        //             'token' => $accessToken,
+        //             'refresh_token' => $refreshToken,
+        //         ]);
+        //     } else {
+        //         return response()->json([
+        //             'error' => 'Not Allowed. Please Contact The Admin on the issue',
+        //         ], 500);
+        //     }
+        // }
